@@ -21,8 +21,8 @@ This will populate the `data-sets` folder in your repo with a number of data set
 
 ### About
 
-The Docker Image bundled with this course (see `Dockerfile`) is based on the jupyter
-distributed and maintained `pyspark-notebook`
+The Docker Image bundled with this course (see `Dockerfile`) is based on the
+`pyspark-notebook`, distributed and maintained by Jupyter
 > [Github link](https://github.com/jupyter/docker-stacks/blob/master/pyspark-notebook/Dockerfile)
 > Original copyright (c) Jupyter Development Team. Distributed under the terms of the
 Modified BSD License.
