@@ -1,6 +1,6 @@
 # Mastering Big Data Analytics with PySpark [Video]
-This is the code repository for [Mastering Big Data Analytics with PySpark [Video]]( https://www.packtpub.com/data/mastering-big-data-analytics-with-pyspark-video), published by [Packt](https://www.packtpub.com/?utm_source=github ). It contains all the supporting project files necessary to work through the video course from start to finish.
-Author: [Danny Meijer](https://www.linkedin.com/in/dannydatascientist)
+This is the code repository for [Mastering Big Data Analytics with PySpark [Video]]( https://www.packtpub.com/data/mastering-big-data-analytics-with-pyspark-video), published by [Packt](https://www.packtpub.com/?utm_source=github ). It contains all the supporting project files necessary to work through the video course from start to finish.<br/>
+Authored by: [Danny Meijer](https://www.linkedin.com/in/dannydatascientist)
 
 ## About the Video Course
 PySpark helps you perform data analysis at-scale; it enables you to build more scalable analyses and pipelines. This course starts by introducing you to PySpark's potential for performing effective analyses of large datasets. You'll learn how to interact with Spark from Python and connect Jupyter to Spark to provide rich data visualizations. After that, you'll delve into various Spark components and its architecture.
@@ -34,29 +34,29 @@ A working knowledge of Python assumed.
 #### Minimum Hardware Requirements
 For successful completion of this course, students will require the computer systems with at least the following:
 
-OS: Windows, Mac, or Linux
-Processor: Any processor from the last few years
-Memory: 2GB RAM
-Storage: 300MB for the Integrated Development Environment (IDE) and 1GB for cache
+OS: Windows, Mac, or Linux<br/>
+Processor: Any processor from the last few years<br/>
+Memory: 2GB RAM<br/>
+Storage: 300MB for the Integrated Development Environment (IDE) and 1GB for cache<br/>
 
 #### Recommended Hardware Requirements <br/>
 For an optimal experience with hands-on labs and other practical activities, we recommend the following configuration:
 
-OS: Windows, Mac, or Linux
-Processor: Core i5 or better (or AMD equivalent)
-Memory: 8GB RAM or better
-Storage:  2GB free for build caches and dependencies
+OS: Windows, Mac, or Linux<br/>
+Processor: Core i5 or better (or AMD equivalent)<br/>
+Memory: 8GB RAM or better<br/>
+Storage:  2GB free for build caches and dependencies<br/>
 
 #### Software Requirements<br/>
 
-Operating system: Windows, Mac, or Linux
+Operating system: Windows, Mac, or Linux<br/>
 
-Docker
+Docker<br/>
 
 ## Follow the instructions below to download the data belonging to the course as well as
  setting up your interactive development environment.
 
-## Downloading Data for this Course
+### Downloading Data for this Course
 
 Once you have cloned this repository locally, simply navigate to the folder you have
  stored the repo in and run:
@@ -65,7 +65,7 @@ Once you have cloned this repository locally, simply navigate to the folder you 
 This will populate the `data-sets` folder in your repo with a number of data sets that
  will be used throughout the course.
 
-## Docker Image Bundled with the Course
+### Docker Image Bundled with the Course
 
 ### About
 
@@ -125,8 +125,8 @@ docker stop mastering_pyspark_ml
 ```
 
 ## Related Products
-* [Adobe After Effects CC: Tips, Tricks, and Techniques [Video]](https://www.packtpub.com/business-other/adobe-after-effects-cc-tips-tricks-and-techniques-video)
+* [Hands-On Continuous Integration and Delivery with Jenkins X and Kubernetes [Video]](https://www.packtpub.com/cloud-networking/hands-on-continuous-integration-and-delivery-with-jenkins-x-and-kubernetes-video)
 
 * [Mastering Palo Alto Networks [Video]](https://www.packtpub.com/networking-and-servers/mastering-palo-alto-networks-video)
 
-* [Azure Cognitive Services for Developers [Video]](https://www.packtpub.com/application-development/azure-cognitive-services-developers-video)
+* [Hands-On Systems Programming with Rust [Video]](https://www.packtpub.com/programming/hands-on-systems-programming-with-rust-video)
