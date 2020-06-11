@@ -1,11 +1,59 @@
-# Mastering Big Data Analytics with PySpark
+# Mastering Big Data Analytics with PySpark [Video]
+This is the code repository for [Mastering Big Data Analytics with PySpark [Video]]( https://www.packtpub.com/data/mastering-big-data-analytics-with-pyspark-video), published by [Packt](https://www.packtpub.com/?utm_source=github ). It contains all the supporting project files necessary to work through the video course from start to finish.
+Author: [Danny Meijer](https://www.linkedin.com/in/dannydatascientist)
 
-This repository contains the courseware belonging to the course __Mastering Big Data
- Analytics with PySpark__.
-- Published by:  Packt Publishing
-- Author: [Danny Meijer](https://www.linkedin.com/in/dannydatascientist)
+## About the Video Course
+PySpark helps you perform data analysis at-scale; it enables you to build more scalable analyses and pipelines. This course starts by introducing you to PySpark's potential for performing effective analyses of large datasets. You'll learn how to interact with Spark from Python and connect Jupyter to Spark to provide rich data visualizations. After that, you'll delve into various Spark components and its architecture.
 
-Follow the instructions below to download the data belonging to the course as well as
+You'll learn to work with Apache Spark and perform ML tasks more smoothly than before. Gathering and querying data using Spark SQL, to overcome challenges involved in reading it. You'll use the DataFrame API to operate with Spark MLlib and learn about the Pipeline API. Finally, we provide tips and tricks for deploying your code and performance tuning.
+
+By the end of this course, you will not only be able to perform efficient data analytics but will have also learned to use PySpark to easily analyze large datasets at-scale in your organization. <br/>
+
+<H2>What You Will Learn</H2>
+<DIV class>
+
+<UL>
+• Gain a solid knowledge of vital Data Analytics concepts via practical use cases<br/>
+• Create elegant data visualizations using Jupyter<br/>
+• Run, process, and analyze large chunks of datasets using PySpark<br/>
+• Utilize Spark SQL to easily load big data into DataFrames<br/>
+• Create fast and scalable Machine Learning applications using MLlib with Spark<br/>
+• Perform exploratory Data Analysis in a scalable way<br/>
+• Achieve scalable, high-throughput and fault-tolerant processing of data streams using Spark Streaming<br/>
+</LI></UL></DIV>
+
+## Instructions and Navigation
+### Assumed Knowledge
+This course will greatly appeal to data science enthusiasts, data scientists, or anyone who is familiar with Machine Learning concepts and wants to scale out his/her work to work with big data.
+
+If you find it difficult to analyze large datasets that keep growing, then this course is the perfect guide for you!
+
+A working knowledge of Python assumed.
+
+## Technical Requirements <br/>
+#### Minimum Hardware Requirements
+For successful completion of this course, students will require the computer systems with at least the following:
+
+OS: Windows, Mac, or Linux
+Processor: Any processor from the last few years
+Memory: 2GB RAM
+Storage: 300MB for the Integrated Development Environment (IDE) and 1GB for cache
+
+#### Recommended Hardware Requirements <br/>
+For an optimal experience with hands-on labs and other practical activities, we recommend the following configuration:
+
+OS: Windows, Mac, or Linux
+Processor: Core i5 or better (or AMD equivalent)
+Memory: 8GB RAM or better
+Storage:  2GB free for build caches and dependencies
+
+#### Software Requirements<br/>
+
+Operating system: Windows, Mac, or Linux
+
+Docker
+
+## Follow the instructions below to download the data belonging to the course as well as
  setting up your interactive development environment.
 
 ## Downloading Data for this Course
@@ -75,3 +123,10 @@ Once you are ready to shutdown the Docker container, you can use the following c
 ```bash
 docker stop mastering_pyspark_ml
 ```
+
+## Related Products
+* [Adobe After Effects CC: Tips, Tricks, and Techniques [Video]](https://www.packtpub.com/business-other/adobe-after-effects-cc-tips-tricks-and-techniques-video)
+
+* [Mastering Palo Alto Networks [Video]](https://www.packtpub.com/networking-and-servers/mastering-palo-alto-networks-video)
+
+* [Azure Cognitive Services for Developers [Video]](https://www.packtpub.com/application-development/azure-cognitive-services-developers-video)
