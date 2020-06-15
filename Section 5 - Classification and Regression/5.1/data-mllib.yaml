@@ -1,0 +1,70 @@
+- mllib:
+
+  - als:
+    - sample_movielens_ratings.txt              32K
+    - test.data                                 128
+
+  - images:
+
+    - partitioned:
+
+      - cls=kittens:
+
+        - date=2018-01:
+          - 29.5.a_b_EGDP022204.jpg             27K
+          - not-image.txt                        13
+
+        - date=2018-02:
+          - 54893.jpg                           36K
+          - DP153539.jpg                        26K
+          - DP802813.jpg                        30K
+
+      - cls=multichannel:
+
+        - date=2018-01:
+          - BGRA.png                            683
+          - BGRA_alpha_60.png                   747
+
+        - date=2018-02:
+          - chr30.4.184.jpg                     59K
+          - grayscale.jpg                       36K
+
+    - origin:
+
+      - kittens:
+        - 29.5.a_b_EGDP022204.jpg               27K
+        - 54893.jpg                             36K
+        - DP153539.jpg                          26K
+        - DP802813.jpg                          30K
+        - not-image.txt                          13
+
+      - multichannel:
+        - BGRA.png                              683
+        - BGRA_alpha_60.png                     747
+        - chr30.4.184.jpg                       59K
+        - grayscale.jpg                         36K
+
+      - license.txt                             830
+
+    - license.txt                               830
+
+  - ridge-data:
+    - lpsa.data                                 11K
+
+- gmm_data.txt                                  63K
+- iris_libsvm.txt                              4.2K
+- kmeans_data.txt                                72
+- pagerank_data.txt                              24
+- pic_data.txt                                  164
+- sample_binary_classification_data.txt        103K
+- sample_fpgrowth.txt                            68
+- sample_isotonic_regression_libsvm_data.txt   1.8K
+- sample_kmeans_data.txt                        120
+- sample_lda_data.txt                           264
+- sample_lda_libsvm_data.txt                    578
+- sample_libsvm_data.txt                       103K
+- sample_linear_regression_data.txt            117K
+- sample_movielens_data.txt                     15K
+- sample_multiclass_classification_data.txt    6.8K
+- sample_svm_data.txt                           39K
+- streaming_kmeans_data_test.txt                 46
