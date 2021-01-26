@@ -1,5 +1,5 @@
 # Mastering Big Data Analytics with PySpark [Video]
-This is the code repository for [Mastering Big Data Analytics with PySpark [Video]]( https://www.packtpub.com/data/mastering-big-data-analytics-with-pyspark-video), published by [Packt](https://www.packtpub.com/?utm_source=github ). It contains all the supporting project files necessary to work through the video course from start to finish.<br/>
+This is the code repository for [Mastering Big Data Analytics with PySpark [Video]]( https://www.packtpub.com/data/mastering-big-data-analytics-with-pyspark-video), published by [Packt](https://www.packtpub.com/?utm_source=github ). It contains all the supporting project files necessary to work through the video course from start to finish.
 Authored by: [Danny Meijer](https://www.linkedin.com/in/dannydatascientist)
 
 ## About the Video Course
@@ -9,20 +9,20 @@ You'll learn to work with Apache Spark and perform ML tasks more smoothly than b
 
 By the end of this course, you will not only be able to perform efficient data analytics but will have also learned to use PySpark to easily analyze large datasets at-scale in your organization. <br/>
 
-<H2>What You Will Learn</H2>
-<DIV class>
 
-<UL>
-• Gain a solid knowledge of vital Data Analytics concepts via practical use cases<br/>
-• Create elegant data visualizations using Jupyter<br/>
-• Run, process, and analyze large chunks of datasets using PySpark<br/>
-• Utilize Spark SQL to easily load big data into DataFrames<br/>
-• Create fast and scalable Machine Learning applications using MLlib with Spark<br/>
-• Perform exploratory Data Analysis in a scalable way<br/>
-• Achieve scalable, high-throughput and fault-tolerant processing of data streams using Spark Streaming<br/>
-</LI></UL></DIV>
+## What You Will Learn
+
+- Gain a solid knowledge of vital Data Analytics concepts via practical use cases
+- Create elegant data visualizations using Jupyter
+- Run, process, and analyze large chunks of datasets using PySpark
+- Utilize Spark SQL to easily load big data into DataFrames
+- Create fast and scalable Machine Learning applications using MLlib with Spark
+- Perform exploratory Data Analysis in a scalable way
+- Achieve scalable, high-throughput and fault-tolerant processing of data streams using Spark Streaming
+
 
 ## Instructions and Navigation
+
 ### Assumed Knowledge
 This course will greatly appeal to data science enthusiasts, data scientists, or anyone who is familiar with Machine Learning concepts and wants to scale out his/her work to work with big data.
 
@@ -30,28 +30,30 @@ If you find it difficult to analyze large datasets that keep growing, then this 
 
 A working knowledge of Python assumed.
 
-## Technical Requirements <br/>
+
+## Technical Requirements
+
 #### Minimum Hardware Requirements
 For successful completion of this course, students will require the computer systems with at least the following:
 
-OS: Windows, Mac, or Linux<br/>
-Processor: Any processor from the last few years<br/>
-Memory: 2GB RAM<br/>
-Storage: 300MB for the Integrated Development Environment (IDE) and 1GB for cache<br/>
+OS: Windows, Mac, or Linux
+Processor: Any processor from the last few years
+Memory: 2GB RAM
+Storage: 300MB for the Integrated Development Environment (IDE) and 1GB for cache
 
 #### Recommended Hardware Requirements <br/>
 For an optimal experience with hands-on labs and other practical activities, we recommend the following configuration:
 
-OS: Windows, Mac, or Linux<br/>
-Processor: Core i5 or better (or AMD equivalent)<br/>
-Memory: 8GB RAM or better<br/>
-Storage:  2GB free for build caches and dependencies<br/>
+OS: Windows, Mac, or Linux
+Processor: Core i5 or better (or AMD equivalent)
+Memory: 8GB RAM or better
+Storage:  2GB free for build caches and dependencies
 
-#### Software Requirements<br/>
 
-Operating system: Windows, Mac, or Linux<br/>
+#### Software Requirements
 
-Docker<br/>
+Operating system: Windows, Mac, or Linux
+Docker
 
 ## Follow the instructions below to download the data belonging to the course as well as
  setting up your interactive development environment.
@@ -99,7 +101,7 @@ The easiest way to run the container that belongs to this course is by running
 
 If you rather start the Docker container manually, use the following instructions:
 
-1. __Downlad the data__
+1. __Download the data__
     ```bash
     python download_data.py
     ```

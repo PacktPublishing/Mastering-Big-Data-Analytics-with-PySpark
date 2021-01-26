@@ -1,4 +1,4 @@
-from pathlib import Path, PurePath
+from pathlib import Path
 import logging
 import re
 import webbrowser
@@ -78,13 +78,14 @@ def look_ahead(iter_item):
 
 class Course:
     """Class that constructs the environment for this course"""
+
     author = "Danny Meijer"
     copyright = 2020
 
     find_me_on_the_web = {
         "LinkedIn": "https://www.linkedin.com/in/dannydatascientist/",
         "GitHub": "https://github.com/dannymeijer",
-        "Email": "chilltake@gmail.com"
+        "Email": "chilltake@gmail.com",
     }
 
     @staticmethod
@@ -100,8 +101,8 @@ class Course:
     container_name = re_search('ARG CONTAINER_NAME="([\w-]+)"', Dockerfile)
     full_name = re_search('ARG COURSE_NAME="([\w\s]+)"', Dockerfile)
     short_name = full_name.lower().replace(" ", "_")
-    repo_name = PurePath(repo_path).name
-    home = PurePath(re_search('ENV HOME="(.+)"', Dockerfile))
+    repo_name = Path(repo_path).name
+    home = Path(re_search('ENV HOME="(.+)"', Dockerfile))
     ports = re_search("EXPOSE ([0-9/tcudp]+)", Dockerfile, plural=True)
     tag = "{tag}:{target}".format(tag=container_name, target=version)
 
@@ -116,27 +117,25 @@ class Course:
 
     @property
     def volumes(self):
-        """ volumes property dynamically builds volume configuration based on the
+        """volumes property dynamically builds volume configuration based on the
         course Sections, expecting a data-sets folder and creating a work folder
         :return: dictionary to configure volumes mounted inside the container
         """
         return {
             # Mount data-sets
-            str(self.repo_path / "data-sets"): {
-                "bind": str(self.home / "data-sets"),
+            self.repo_path / "data-sets": {
+                "bind": (self.home / "data-sets").as_posix(),
                 "mode": "rw",
             },
             # Mount work folder
-            str(self.repo_path / "work"): {
-                "bind": str(self.home / "work"),
+            self.repo_path / "work": {
+                "bind": (self.home / "work").as_posix(),
                 "mode": "rw",
             },
             # Mount each section
             **{
-                str(section_path): {
-                    "bind": str(
-                        self.home / self.short_name / PurePath(section_path).name
-                    ),
+                section_path: {
+                    "bind": (self.home / self.short_name / section_path.name).as_posix(),
                     "mode": "rw",
                 }
                 for section_path in list(self.repo_path.glob("Section*"))
@@ -144,7 +143,7 @@ class Course:
         }
 
     def _client(self):
-        """ Initiates a Docker client
+        """Initiates a Docker client
         :returns: DockerClient
         """
         try:
@@ -175,7 +174,7 @@ class Course:
             logger.warning("Unable to remove image, ImageNotFound %s", tag)
 
     def build_image(self):
-        """ Equivalent of `docker build --rm -f "Dockerfile" -t $COURSE_NAME .`
+        """Equivalent of `docker build --rm -f "Dockerfile" -t $COURSE_NAME .`
         :return: None
         """
         logger.info("Building Docker image")
@@ -231,12 +230,8 @@ class Course:
                         ),
                         total_progress="{0:.2f}%".format(
                             (
-                                float(
-                                    sum([v["current"] for v in progress_log.values()])
-                                )
-                                / float(
-                                    sum([v["total"] for v in progress_log.values()])
-                                )
+                                float(sum([v["current"] for v in progress_log.values()]))
+                                / float(sum([v["total"] for v in progress_log.values()]))
                             )
                             * 100
                         ),
@@ -249,7 +244,7 @@ class Course:
         logger.info("Image ID: %s", self.image.id)
 
     def _image(self):
-        """ Retrieves docker image (if available)
+        """Retrieves docker image (if available)
         :return: docker image object
         """
         logger.info("Checking if Docker image is already set-up")
@@ -302,7 +297,7 @@ class Course:
         return self.container
 
     def _container(self):
-        """ Retrieves docker container (if available)
+        """Retrieves docker container (if available)
         :return: docker container object
         """
         logger.info("Checking if course container is running already")
