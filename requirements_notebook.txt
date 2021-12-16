@@ -1,5 +1,5 @@
 notebook==6.1.5
-jupyterhub==1.0.0
+jupyterhub==1.5.0
 jupyterlab==0.35.5
 ipywidgets==7.4.*
 numpy==1.15.*
