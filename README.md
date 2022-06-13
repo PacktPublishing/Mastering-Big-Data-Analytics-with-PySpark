@@ -1,7 +1,3 @@
-## [Get this title for $10 on Packt's Spring Sale](https://www.packt.com/V14308?utm_source=github&utm_medium=packt-github-repo&utm_campaign=spring_10_dollar_2022)
------
-For a limited period, all eBooks and Videos are only $10. All the practical content you need \- by developers, for developers
-
 # Mastering Big Data Analytics with PySpark [Video]
 This is the code repository for [Mastering Big Data Analytics with PySpark [Video]]( https://www.packtpub.com/data/mastering-big-data-analytics-with-pyspark-video), published by [Packt](https://www.packtpub.com/?utm_source=github ). It contains all the supporting project files necessary to work through the video course from start to finish.
 Authored by: [Danny Meijer](https://www.linkedin.com/in/dannydatascientist)
