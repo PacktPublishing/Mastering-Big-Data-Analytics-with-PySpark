@@ -132,3 +132,7 @@ docker stop mastering_pyspark_ml
 * [Mastering Palo Alto Networks [Video]](https://www.packtpub.com/networking-and-servers/mastering-palo-alto-networks-video)
 
 * [Hands-On Systems Programming with Rust [Video]](https://www.packtpub.com/programming/hands-on-systems-programming-with-rust-video)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781838640583">https://packt.link/free-ebook/9781838640583 </a> </p>
