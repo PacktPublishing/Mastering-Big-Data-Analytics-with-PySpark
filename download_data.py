@@ -9,15 +9,10 @@ logging.basicConfig(
     level=logging.INFO, format="%(levelname)-7s  %(name)-19s  %(message)s", style="%"
 )
 logger = logging.getLogger("CourseHandler")
-
-# CONFIGURATIONS / SET UP
 REPO_PATH = Path(__file__).resolve().parent
-# Extract download path for Data Sets
 DATA_SETS_PATH = REPO_PATH / "data-sets"
 WORK_PATH = REPO_PATH / "work"
-# Set chunk size for downloading (avoid unnecessary loading to memory)
-CHUNK_SIZE = 5242880  # 5 MB in bytes
-# Name/location of the data_sets configuration file
+CHUNK_SIZE = 5242880  
 CONFIG_LOCATION = REPO_PATH / "conf" / "data_sets.conf"
 
 
@@ -36,10 +31,10 @@ def path_already_exists(dir_path):
 
 
 def download():
-    # Create data-sets folder if it does not yet exist
+  
     create_dir_if_not_exists(DATA_SETS_PATH)
 
-    # PROCESSING DATA SETS DEFINED IN CONFIGURATION FILE
+
     config = configparser.ConfigParser()
     config.read(str(CONFIG_LOCATION))
 
@@ -47,7 +42,7 @@ def download():
         logger.info("Processing {}".format(section))
         readme_md = None
 
-        # Parse configuration for data_set
+        
         data_set_config = config[section]
         download_path = data_set_config["download_path"]
         filename = data_set_config["filename"]
@@ -60,7 +55,7 @@ def download():
                 readme_location=readme_location, license_info=license_info
             )
 
-        # Set download locations
+ 
         if destination_path:
             destination_path = DATA_SETS_PATH / destination_path
             destination_downloadpath = destination_path
@@ -72,25 +67,25 @@ def download():
                 destination_filepath.suffix, ""
             )
 
-        # To avoid compatibility issues downstream, set destination_filepath as string
+    
         destination_filepath = str(destination_filepath)
 
-        # Check if data is already downloaded
+       
         if path_already_exists(destination_downloadpath):
             logger.info('Skipping "%s"', filename)
             continue
 
-        # Create Directory
+
         create_dir_if_not_exists(destination_path)
 
-        # Create README.MD file (if needed)
+ 
         if readme_md:
             readme_loc = str(destination_path / "README.md")
             with open(readme_loc, "wb") as readme:
                 logger.info(" - Creating README.md file")
                 readme.write(readme_md.encode("UTF-8"))
 
-        # Download the file in chunks
+
         with requests.get(str(download_path), stream=True, verify=False) as r:
             r.raise_for_status()
             logger.info(
@@ -108,7 +103,7 @@ def download():
                     )
         logger.info("Finished downloading %s", filename)
 
-        # Extract zipfile
+
         with ZipFile(destination_filepath, "r") as downloaded_file:
             logger.info(
                 'Extracting "%s" to "%s"',
@@ -117,7 +112,7 @@ def download():
             )
             downloaded_file.extractall(destination_path)
 
-        # Remove zip file
+
         logger.info('Removing zip-file "%s"', filename)
         os.remove(destination_filepath)
 
