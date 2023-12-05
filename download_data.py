@@ -13,7 +13,7 @@ logger = logging.getLogger("CourseHandler")
 # CONFIGURATIONS / SET UP
 REPO_PATH = Path(__file__).resolve().parent
 # Extract download path for Data Sets
-DATA_SETS_PATH = REPO_PATH / "data-sets"
+DATA_SETS_PATH = path('C:/Users/ritvik.kamath/OneDrive - UGRO Capital/Documents/Pyspark_Projects')
 WORK_PATH = REPO_PATH / "work"
 # Set chunk size for downloading (avoid unnecessary loading to memory)
 CHUNK_SIZE = 5242880  # 5 MB in bytes
